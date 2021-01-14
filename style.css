@@ -30,15 +30,14 @@ time, mark, audio, video {
 body {
     line-height:1;
     width: 100%;
-    font-family: sans-serif;
-    
+    font-family: Lato, sans-serif;;
+    margin: 0 auto;
 }
 
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
     display:block;
 }
-
 nav ul {
     list-style:none;
 }
@@ -102,9 +101,34 @@ hr {
 
 input, select {
     vertical-align:middle;
-}nav {
-	/* background-color: #222222; */
-	/* color: white; */
+}
+/* 下から出てくるヤツ */
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 77%;
+}
+#page-top a {
+  background: #666;
+  text-decoration: none;
+  color: #fff;
+  width: 100px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+}
+#page-top a:hover {
+  text-decoration: none;
+  background: #999;
+}
+/* <終わり>下から出てくるヤツ */
+.container{
+  /* margin: 0 auto; */
+}
+nav {
+	color: white;
 }
 nav ul {
 	display: flex;
@@ -150,7 +174,48 @@ nav li.nav_home{
   margin-right: auto; 
   font-size: 2rem;
 }
-.bg-bear{
+/* 下からフェードイン */
+.fadein {
+  opacity : 0;
+  transform : translate(0, 50px);
+  transition : all 1000ms;
+}
+.fadein.scrollin {
+  opacity : 1;
+  transform : translate(0, 0);
+}
+/* 2つ目の要素に400msのdelayをかける */
+.fadein:nth-of-type(2) {
+  -moz-transition-delay: 300ms;
+  -webkit-transition-delay: 300ms;
+  -o-transition-delay: 300ms;
+  -ms-transition-delay: 300ms;
+}
+/* 3つ目の要素に800msのdelayをかける */
+.fadein:nth-of-type(3) {
+  -moz-transition-delay: 600ms;
+  -webkit-transition-delay: 600ms;
+  -o-transition-delay: 600ms;
+  -ms-transition-delay: 600ms;
+}
+/* 4つ目の要素に800msのdelayをかける */
+.fadein:nth-of-type(4) {
+  -moz-transition-delay: 900ms;
+  -webkit-transition-delay: 900ms;
+  -o-transition-delay: 900ms;
+  -ms-transition-delay: 900ms;
+}
+/* 5つ目の要素に800msのdelayをかける */
+.fadein:nth-of-type(5) {
+  -moz-transition-delay: 1200ms;
+  -webkit-transition-delay: 1200ms;
+  -o-transition-delay: 1200ms;
+  -ms-transition-delay: 1200ms;
+}
+
+/* <終わり>下からフェードイン */
+.bg-img{
+  position: relative;
   height: 600px;
   width: 100%;
   background-image: url(./images/my_photo1.jpg);
@@ -160,50 +225,56 @@ nav li.nav_home{
   background-color:rgba(255,255,255,0.5);
   background-blend-mode:lighten;
 }
-.title{
+/* .title{
   position: relative;
-}
-h1{
+} */
+.t-content{
   position: absolute;
-  left: 50%;
-  top: 20px;
-  transform: translate(-50%, 0);
-  animation: fadeIn 0.2s ease 0.3s 1 normal;
-}
-.title-content{
-  position: absolute;
-  top: 300px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  top: 25%;
+  left: 10%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+  font-size: 1.4rem;
+  background: rgb(227,246,245,0.7);
   text-align: center;
-  font-size: 25px;
+  color: #aaa;
+  padding: 10px;
+}
+.t-content .t-title{
+  color: red;
+  font-size: 2.5rem;
+}
+.t-content .t-message{
+  font-size: 1.7rem;
 }
 .bg-non{
   background: white;
   padding-bottom:50px;
+  margin:0 30px;
 }
 h2{
   text-align: center;
   padding-top: 20px;
   padding-bottom: 30px;
 }
-h2 span{
+/* h2 span{
   text-align: center;
   border-bottom: 3px solid;
   padding-bottom: 5px;
-}
-.bg-non .m-profile{
+} */
+.bg-non .profile{
   display: flex;
-  margin:0 30px;
+  justify-content: center;
+  width: 100%;
 }
-.m-picture{
-  width: 40%;
+.profile .p-img{
+  width: 30%;
   text-align: center;
 }
-.m-picture img{
+.p-img img{
   width: 300px;
   height: 300px;
-  border-radius: 50%;
+  margin: 10px;
 }
 .m-sns{
   text-align: center;
@@ -211,8 +282,8 @@ h2 span{
 .m-sns .fa-large{
   font-size: 20px;
 }
-.m-content{
-  width: 60%;
+.profile .m-content{
+  width: 70%;
 }
 dl{
   padding: 20px;
@@ -220,8 +291,9 @@ dl{
 .m-content dl dt{
   clear: both;
 }
-.m-profile .m-content{
-  background: #e9e9e9;
+.profile .m-content{
+  background: rgb(227,246,245,0.7);
+  padding: 10px;
 }
 .m-con-title{
   float: left;
@@ -230,7 +302,7 @@ dl{
   float: left;
 }
 .bg{
-  background: rgb(215, 215, 241);
+  background:#bae8e8;
   padding-bottom: 50px;
 }
 h3{
@@ -258,17 +330,10 @@ h3{
   width: 100%;
   display: flex;
   justify-content: space-around;
+  list-style: none;
 }
 .m-per-content a img{
   border: solid 2px #e6e6e6;
   width:300px;
   height: 500px;
-}
-.m-per-content p{
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  margin: 0;
-  color: black;
-  text-decoration: none;
 }
