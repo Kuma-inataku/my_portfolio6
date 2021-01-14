@@ -107,21 +107,21 @@ input, select {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  font-size: 77%;
+  /* font-size: 77%; */
 }
 #page-top a {
-  background: #666;
+  background: #ffd803;
   text-decoration: none;
   color: #fff;
-  width: 100px;
-  padding: 30px 0;
+  width: 80px;
+  padding: 15px 0;
   text-align: center;
   display: block;
   border-radius: 5px;
 }
 #page-top a:hover {
   text-decoration: none;
-  background: #999;
+  background: #f7e371;
 }
 /* <終わり>下から出てくるヤツ */
 .container{
@@ -222,12 +222,9 @@ nav li.nav_home{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-color:rgba(255,255,255,0.5);
+  /* background-color:rgba(255,255,255,0.5); */
   background-blend-mode:lighten;
 }
-/* .title{
-  position: relative;
-} */
 .t-content{
   position: absolute;
   top: 25%;
@@ -265,35 +262,25 @@ h2{
 .bg-non .profile{
   display: flex;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
+  margin:auto 0;
 }
 .profile .p-img{
   width: 30%;
-  text-align: center;
+  /* text-align: center; */
 }
 .p-img img{
   width: 300px;
   height: 300px;
-  margin: 10px;
-}
-.m-sns{
-  text-align: center;
-}
-.m-sns .fa-large{
-  font-size: 20px;
+  margin-bottom:10px;
 }
 .profile .m-content{
   width: 70%;
 }
-dl{
-  padding: 20px;
-}
-.m-content dl dt{
-  clear: both;
-}
+
 .profile .m-content{
   background: rgb(227,246,245,0.7);
-  padding: 10px;
+  padding: 30px;
 }
 .m-con-title{
   float: left;
@@ -310,9 +297,13 @@ h3{
   padding-top:30px ;
   padding-bottom: 80px;
 }
+.skills{
+  /* width: 600px; */
+  /* margin: 0 auto; */
+  /* display: inline; */
+}
 .w-skill{
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
 }
@@ -332,8 +323,20 @@ h3{
   justify-content: space-around;
   list-style: none;
 }
+.m-per .m-per-content{
+  border: 1px solid #ddd;
+  width: 300px;
+  height: 500px;
+  margin: 20px auto 0;
+  transition-duration: 0.5s;
+}
 .m-per-content a img{
-  border: solid 2px #e6e6e6;
+  /* border: solid 2px #e6e6e6; */
   width:300px;
   height: 500px;
+}
+.m-per .m-per-content:hover{
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  transform: translateY(-10px);
+  transition-duration: 0.5s;
 }
