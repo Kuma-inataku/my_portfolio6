@@ -24,36 +24,43 @@
             <a href="#">Home</a>
           </li>
           <li>
-            <a href="#">Profile</a>
+            <a href="about">About Me!</a>
           </li>
           <li>
-            <a href="#">About Me!</a>
+            <a href="skills">Skills</a>
           </li>
           <li>
-            <a href="#">Performance</a>
+            <a href="performance">Portfolio</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="contact">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <!-- 下から出てくるヤツ -->
-    <p id="page-top"><a href="#wrap">PAGE TOP</a></p>
+    <p id="page-top">
+      <a href="#wrap">
+        <!-- PAGE TOP -->
+        <i class="fas fa-angle-up fa-2x"></i>
+      </a>
+    </p>
     <!-- <終わり>下から出てくるヤツ -->
     <div class="wrapper">
       <section class="bg-img">
         <div class="title">
           <!-- 後ろからフェードイン -->
           <div class="t-content fadein">
-            <span class="t-title">ただ今、転職活動中！</span>
-            <br>
-            <br>
-            学習中言語：JavaScript/PHP/WordPress
-            <br>
-            希望勤務地：東京
-            <br>
-            <span class="t-message">ご興味持っていただいたらご連絡ください！</span>
+            <div>
+              <span class="t-title">ただ今、転職活動中！</span>
+              <br>
+              <br>
+              学習中言語：JavaScript/PHP/WordPress
+              <br>
+              希望勤務地：東京
+              <br>
+              <span class="t-message">ご興味持っていただいたらご連絡ください！</span>
+            </div>
           </div>
           <!-- <終わり>後ろからフェードイン -->
         </div>
@@ -62,7 +69,7 @@
         <a name="ABOUT Kuma" id="about"></a>
         <h2 class="fadein">
           <!-- 下からフェードイン -->
-          <span>ABOUT</span>
+          ABOUT ME!
           <!-- 下からフェードイン -->
         </h2>
         <section class="profile">
@@ -111,34 +118,36 @@
         <a name="Kuma's skills" id="skills"></a>
           <h2 class="fadein">
             <!-- 下からフェードイン -->
-            <span>SKILLS</span>
+            SKILLS
             <!-- 下からフェードイン -->
           </h2>
           <!-- 左から順にフェードイン -->
-          <div>
-            <ul class="w-skill">
-              <li class="w-skill-content fadein">
-                <p>HTML</p>
-                <i class="fab fa-html5 fa-7x"></i>
-              </li>
-                <li class="w-skill-content fadein">
-                  <p>CSS</p>
-                  <i class="fab fa-css3-alt fa-7x"></i>
-                </li>
-                <li class="w-skill-content fadein">
-                  <p>JavaScript</p>
-                  <i class="fab fa-js-square fa-7x"></i>
-                </li>
-                <li class="w-skill-content fadein">
-                  <p>WordPress</p>
-                  <i class="fab fa-wordpress fa-7x"></i>
-                </li>
-                <li class="w-skill-content fadein">
-                  <p>Git</p>
-                  <i class="fab fa-git fa-7x"></i>
-                </li>
+            <div class="skills">
+              <ul class="w-skill">
+                <!-- <div class="600px"> -->
+                  <li class="w-skill-content fadein">
+                    <p>HTML</p>
+                    <i class="fab fa-html5 fa-7x"></i>
+                  </li>
+                    <li class="w-skill-content fadein">
+                      <p>CSS</p>
+                      <i class="fab fa-css3-alt fa-7x"></i>
+                    </li>
+                    <li class="w-skill-content fadein">
+                      <p>JavaScript</p>
+                      <i class="fab fa-js-square fa-7x"></i>
+                    </li>
+                    <li class="w-skill-content fadein">
+                      <p>WordPress</p>
+                      <i class="fab fa-wordpress fa-7x"></i>
+                    </li>
+                    <li class="w-skill-content fadein">
+                      <p>Git</p>
+                      <i class="fab fa-git fa-7x"></i>
+                    </li>
+                </div>
               </ul>
-            </div>
+            <!-- </div> -->
             <!-- 左から順にフェードイン -->
           </section>
           <!-- Bootstrapで↓ -->
@@ -164,7 +173,7 @@
           <li class="m-per-content fadein">
             <!-- imageのサイト投函 -->
             <!-- ホバー時「浮かす」 -->
-            <a href="#" class="fadein">
+            <a href="#">
               <img src="./images/simplesite2.png" alt="シンプルなページ2">
               <!-- <p>サイト2</p> -->
             </a>
@@ -173,7 +182,7 @@
           <li class="m-per-content fadein">
             <!-- imageのサイト投函 -->
             <!-- ホバー時アニメーション -->
-            <a href="#" class="fadein">
+            <a href="#">
               <img src="./images/simplesite3.png" alt="シンプルなページ3">
               <!-- <p>サイト3</p> -->
             </a>
@@ -217,14 +226,12 @@
   </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS, then Font Awesome -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script> -->
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
     <!-- jQueryの読み込み↓ -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script>AOS.init()</script>
   </body>
 </html>
