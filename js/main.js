@@ -3,13 +3,13 @@ $(function() {
   topBtn.hide();
   //スクロールが100に達したらボタン表示
   $(window).scroll(function () {
-      if ($(this).scrollTop() > 0) {
+      if ($(this).scrollTop() > 100) {
           topBtn.fadeIn();
       } else {
           topBtn.fadeOut();
       }
   });
-
+  //フェードイン
   $(window).scroll(function (){
     $('.fadein').each(function(){
         var elemPos = $(this).offset().top;

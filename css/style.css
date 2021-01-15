@@ -23,7 +23,7 @@ time, mark, audio, video {
     padding:0;
     border:0;
     outline:0;
-    font-size:100%;
+    /* font-size:100%; */
     vertical-align:baseline;
     background:transparent;
 }
@@ -174,7 +174,7 @@ nav li.nav_home{
   margin-right: auto; 
   font-size: 2rem;
 }
-/* 下からフェードイン */
+/* 下からフェードイン(サブタイトル、Skills) */
 .fadein {
   opacity : 0;
   transform : translate(0, 50px);
@@ -218,7 +218,7 @@ nav li.nav_home{
   position: relative;
   height: 600px;
   width: 100%;
-  background-image: url(./images/my_photo1.jpg);
+  background-image: url(../images/my_photo1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -228,18 +228,19 @@ nav li.nav_home{
 .t-content{
   position: absolute;
   top: 25%;
-  left: 10%;
+  left: 25%;
   -webkit-transform : translate(-50%,-50%);
   transform : translate(-50%,-50%);
   font-size: 1.4rem;
   background: rgb(227,246,245,0.7);
   text-align: center;
-  color: #aaa;
+  color: #333;
   padding: 10px;
+  line-height: 1.5;
 }
 .t-content .t-title{
   color: red;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
 }
 .t-content .t-message{
   font-size: 1.7rem;
@@ -253,6 +254,7 @@ h2{
   text-align: center;
   padding-top: 20px;
   padding-bottom: 30px;
+  font-size: 30px;
 }
 /* h2 span{
   text-align: center;
@@ -339,4 +341,58 @@ h3{
   box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
   transform: translateY(-10px);
   transition-duration: 0.5s;
+}
+.form_inner{
+  margin:0 auto;
+  max-width: 800px;
+  width: 80%;
+}
+form dl{
+  padding: 20px 3%;
+  border-bottom: 1px dotted #ccc;
+}
+form dl dt, form dl dd{
+   display: block;
+}
+form dl dt{
+  /* font-size: 10px; */
+  font-weight: bold;
+}
+form dl dt span{
+  color: #da3246;
+  font-weight: normal;
+}
+form dl dd{
+  margin-top: 15px;
+}
+form dl dd input,form dl dd select{
+   width: 100%;
+   padding: 8px;
+   display: block;
+   border: 1px solid #ddd;
+  }
+form input[type="submit"]{
+  width: 90%;
+  max-width: 350px;
+  margin: 40px auto 0;
+  padding: 20px 0;
+  display: block;
+  color: #fff;
+  border-radius: 5px;
+  border:none;
+  text-align: center;
+  background: #ffd803;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+form input[type="submit"]:hover{
+  background: #f7e371;
+}
+textarea{
+  width:100%;
+  max-width: 770px;
+  margin: 0 ;
+  box-sizing:border-box;
+  border:none;
 }
