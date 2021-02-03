@@ -256,6 +256,14 @@ h2{
   padding-bottom: 30px;
   font-size: 30px;
 }
+h3{
+  text-align: center;
+  padding-top:30px ;
+  padding-bottom: 80px;
+}
+h4 {
+  margin-bottom: 20px;
+}
 /* h2 span{
   text-align: center;
   border-bottom: 3px solid;
@@ -278,11 +286,15 @@ h2{
 }
 .profile .m-content{
   width: 70%;
-}
-
-.profile .m-content{
   background: rgb(227,246,245,0.7);
   padding: 30px;
+}
+.profile .m-content .m-text{
+  margin-bottom: 20px;
+}
+.profile .m-content .m-text span{
+  color: red;
+  font-weight: bold;
 }
 .m-con-title{
   float: left;
@@ -294,19 +306,14 @@ h2{
   background:#bae8e8;
   padding-bottom: 50px;
 }
-h3{
-  text-align: center;
-  padding-top:30px ;
-  padding-bottom: 80px;
-}
-.skills{
-  /* width: 600px; */
-  /* margin: 0 auto; */
-  /* display: inline; */
+/* .skills{
+  width: 600px;
+  margin: 0 auto;
+  display: inline;
 }
 .w-skill{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   list-style: none;
 }
 .w-skill-content .fa{
@@ -318,7 +325,7 @@ h3{
   font-weight: bold;
   font-size: 20px;
   margin: 0;
-}
+} */
 .m-per{
   width: 100%;
   display: flex;
@@ -328,14 +335,16 @@ h3{
 .m-per .m-per-content{
   border: 1px solid #ddd;
   width: 300px;
-  height: 500px;
+  height: 240px;
   margin: 20px auto 0;
   transition-duration: 0.5s;
 }
 .m-per-content a img{
-  /* border: solid 2px #e6e6e6; */
-  width:300px;
-  height: 500px;
+  display: block;
+  width: 300px;
+  height: 240px;
+  object-fit: cover;
+  overflow: hidden;
 }
 .m-per .m-per-content:hover{
   box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
@@ -346,9 +355,12 @@ h3{
   margin:0 auto;
   max-width: 800px;
   width: 80%;
+  background-color: #eee;
+  padding: 30px;
 }
 form dl{
   padding: 20px 3%;
+  /* padding: 20px 70px; */
   border-bottom: 1px dotted #ccc;
 }
 form dl dt, form dl dd{
@@ -365,7 +377,7 @@ form dl dt span{
 form dl dd{
   margin-top: 15px;
 }
-form dl dd input,form dl dd select{
+form dl dd input, form dl dd select{
    width: 100%;
    padding: 8px;
    display: block;
@@ -394,5 +406,6 @@ textarea{
   max-width: 770px;
   margin: 0 ;
   box-sizing:border-box;
-  border:none;
+  border: 1px solid #ddd;
+  /* border:none; */
 }
